@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.FridgeApp" parent="Theme.Material3.DayNight">
+        <item name="android:statusBarColor">?attr/colorSurfaceVariant</item>
+        <item name="android:navigationBarColor">?attr/colorSurfaceVariant</item>
+    </style>
+
+    <style name="Theme.FridgeApp" parent="Base.Theme.FridgeApp" />
+
+    <style name="Theme.FridgeApp.NoActionBar" parent="Theme.FridgeApp">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+</resources>

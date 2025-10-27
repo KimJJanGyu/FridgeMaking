@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <!-- 상단 냉장고 이미지 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fridgeArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <!-- 냉장고 이미지 -->
+        <ImageView
+            android:id="@+id/fridgeInside"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fridge_closed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="374:693" />
+
+        <!-- ===== 왼쪽 다섯 칸 ===== -->
+        <Button
+            android:id="@+id/btnMeat"
+            style="@style/FridgeCategoryButton"
+            android:text="육류"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <Button
+            android:id="@+id/btnFruit"
+            style="@style/FridgeCategoryButton"
+            android:text="과일"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.27" />
+
+        <Button
+            android:id="@+id/btnDrink"
+            style="@style/FridgeCategoryButton"
+            android:text="음료"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.41" />
+
+        <Button
+            android:id="@+id/btnDairy"
+            style="@style/FridgeCategoryButton"
+            android:text="유제품"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <Button
+            android:id="@+id/btnFrozen"
+            style="@style/FridgeCategoryButton"
+            android:text="냉동식품"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.69" />
+
+        <!-- ===== 오른쪽 다섯 칸 ===== -->
+        <Button
+            android:id="@+id/btnSeafood"
+            style="@style/FridgeCategoryButton"
+            android:text="해산물"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <Button
+            android:id="@+id/btnVegetable"
+            style="@style/FridgeCategoryButton"
+            android:text="채소"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.27" />
+
+        <Button
+            android:id="@+id/btnSauce"
+            style="@style/FridgeCategoryButton"
+            android:text="소스류"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.41" />
+
+        <Button
+            android:id="@+id/btnSide"
+            style="@style/FridgeCategoryButton"
+            android:text="반찬"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.54" />
+
+        <Button
+            android:id="@+id/btnEtc"
+            style="@style/FridgeCategoryButton"
+            android:text="기타"
+            app:layout_constraintTop_toTopOf="@id/fridgeInside"
+            app:layout_constraintBottom_toBottomOf="@id/fridgeInside"
+            app:layout_constraintStart_toStartOf="@id/fridgeInside"
+            app:layout_constraintEnd_toEndOf="@id/fridgeInside"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.69" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 하단 식재료 등록 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAddIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="식재료 등록"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/rounded_button_bg"
+            android:elevation="6dp"
+            android:translationZ="4dp"
+            android:stateListAnimator="@null" />
+    </LinearLayout>
+</LinearLayout>
