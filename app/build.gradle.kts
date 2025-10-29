@@ -17,7 +17,10 @@ android {
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "YOUTUBE_API_KEY", "\"YOUR_YOUTUBE_API_KEY_HERE\"")
+        buildConfigField("String", "FOOD_BASE_URL", "\"https://apis.data.go.kr/1471000/FoodNtrCpntDbInfo01/\"")
+        buildConfigField("String", "FOOD_API_KEY", "\"${project.properties["FOOD_API_KEY_ENC"] ?: ""}\"")
+        buildConfigField("String", "YOUTUBE_BASE_URL", "\"https://www.googleapis.com/youtube/v3/\"")
+        buildConfigField("String", "YOUTUBE_API_KEY", "\"${project.properties["YOUTUBE_API_KEY"] ?: ""}\"")
     }
 
     buildFeatures {

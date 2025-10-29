@@ -3,6 +3,7 @@ package com.example.fridgeapp
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.fridgeapp.ui.fragment.MainImageFragment
 
 class ScreenSlideAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
 

@@ -10,6 +10,7 @@ import retrofit2.http.Query
 @Serializable data class YtSearchResponse(val items: List<YtItem> = emptyList())
 
 interface YouTubeApi {
+
     @GET("search")
     suspend fun search(
         @Query("key") key: String = BuildConfig.YOUTUBE_API_KEY,
